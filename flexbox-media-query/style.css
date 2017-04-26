@@ -1,0 +1,53 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper {
+	display: flex;
+}
+
+header,
+nav,
+aside,
+main,
+footer {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+header {
+	background: darkblue;
+}
+
+nav {
+	background: steelblue;
+}
+
+aside {
+	background: lightblue;
+	width: 20%;
+}
+
+main {
+	background: purple;
+	width: 80%;
+}
+
+footer {
+	background: aqua;
+}
+
+@media(max-width: 320px) {
+	.wrapper {
+		flex-direction: column;
+	}
+
+	aside,
+	main {
+		width: 100%;
+	}
+}
